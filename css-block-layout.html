@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color:black;
+    color: white;
+  }
+ .aaa {
+    width: 600px;
+    margin: auto;
+  }
+  .bbb {
+    margin: 15px auto;
+    width: 600px;
+  }
+  .bbb>p {
+    margin: 16px auto;
+  }
+
+
+  main .bbb div {
+    height: 34px;
+    width: 174px;
+    /* 文本垂直居中，与height属性一样大 */
+    line-height: 34px;
+    /* 文本水平居中 */
+    text-Align: center;
+    border: 3px solid;
+    background-color: pink;
+    margin-bottom: -40px;
+  }
+
+  main .bbb div:hover {
+    background-color: red;
+  }
+
+  main div:nth-child(3n+4) {
+    margin-bottom: 15px;
+  }
+
+  main div:nth-child(3n+3) {
+    margin-left: 210px;
+  }
+
+  main div:nth-child(3n+4) {
+    margin-left: 420px;
+  }
+
+  main ul {
+    list-style: none;
+    margin: 20px 0;
+  }
+
+  li {
+    border-bottom: 1px dotted #000;
+    margin: 1px 0;
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+
+  .ccc {
+    text-Align: center;
+    background-color: rgb(238, 138, 238);
+  }
+</style>
+
+<body>
+  <header>
+    <div class="aaa">hello world 请调整浏览器窗口大小查看效果</div>
+  </header>
+
+  <main>
+  <div class="bbb">
+    <p>页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体
+      宽度600px
+      页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体
+      宽度600px
+    </p>
+    <div>宽180高40(包含边框)</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>水平间隙30px</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>垂直间隙15px</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>边框宽度3px</div>
+    <div>产品</div>
+    <div>产品</div>
+    <ul>
+      <li>link</li>
+      <li>link</li>
+      <li>link</li>
+      <li>link</li>
+      <li>link</li>
+    </ul>
+  </div>
+  </main>
+
+  <footer>
+    <div class="ccc">
+      <p>&copy;版权所有<br>本页面所有布局均使用块元素</p>
+    </div>
+  </footer>
+</body>
+
+</html>
