@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      padding=0;
+      margin=0;
+    }
+    div{
+      border:1px solid grey;
+      background-color:black;
+      height:80px;
+      text-align: center;
+      line-height: 78px;
+
+    }
+    ul {
+      list-style: none;
+      margin:0 auto;
+
+      padding: 0;
+      margin: 0;
+      background-color:black;
+      display: inline-block;
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .photo {
+      background-image: url(google.png);
+      /*先宽后高，从左往右移动57px,从上往下移动159px*/
+      background-position:-57px -159px;
+      background-repeat: no-repeat;
+      background-color:transparent;
+      padding:0;
+      width:153px;
+      height:55px;
+      border:none;
+      overflow:visible;
+    }
+
+    button {
+      border: 1px solid transparent;
+      outline: none;
+      border-radius: 4px;
+      vertical-align: middle;
+      background-color: black;
+      width: 53px;
+      height: 40px;
+    }
+    .search{
+      height: 25px;
+      width: 400px;
+    }
+    button:hover{
+      background-color:grey;
+    }
+    button:active{
+      background-color: #fff;
+    }
+    li button .bp{
+      display: inline-block;
+      background-image: url(google.png);
+      background-position:-218px -115px ;
+      background-repeat: no-repeat;
+      background-color:transparent;
+      width:38px;
+      height: 37px;
+    }
+    .icom{
+      display: inline-block;
+      background-image: url(google.png);
+      background-position:0 -209px ;
+      background-repeat: no-repeat;
+      background-color:transparent;
+      vertical-align: bottom;
+      width:24px;
+      height: 26px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div>
+  <ul>
+    <li class="photo"></li>
+    <li>
+      <form  action="http://www.google.com/" target="blank">
+        <input class="search" type="text" name="q" placeholder="search">
+      </form>
+    </li>
+    <li>
+      <button>
+        <span class="bp"> </span>
+      </button>
+    </li>
+    <li class="icom">
+    </li>
+  </ul>
+  </div>
+</header>
+</body>
+</html>
