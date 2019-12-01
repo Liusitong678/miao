@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html,body {
+      height: 100%;
+      width:100%;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    li{
+      vertical-align: top;
+    }
+    ul {
+      list-style: none;
+      height: 100%;
+      width:100%;
+    }
+
+    .q1 {
+      display: inline-block;
+      background-color: red;
+      width: 100%;
+      height: 100px;
+    }
+
+    .q2 {
+      display: inline-block;
+      background-color: yellow;
+      width: 100px;
+      height: calc(100% - 100px);
+    }
+    .q3{
+      display: inline-block;
+      background-color: lightgreen;
+      width:calc(100% - 100px);
+      height:calc(100% - 100px);
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li class="q1">QQ mail 布局 -- 使用 Inline 元素布局</li>
+    <li class="q2"></li><li class="q3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolor earum est. Necessitatibus, pariatur, voluptate!</li>
+  </ul>
+</body>
+
+</html>
