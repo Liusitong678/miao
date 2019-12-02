@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+
+      list-style: none;
+      background-color: rgb(32, 100, 200);
+      color: white;
+      margin: 70px auto 0;
+      padding-left: 150px;
+      font-size: 0px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    li {
+      position: relative;
+      font-size: 14px;
+      display: inline-block;
+      padding: 12px;
+      border-right: 1px solid rgb(55, 116, 206);
+    }
+
+    li:first-child {
+      background-color: rgb(0, 54, 121);
+    }
+
+    li:hover {
+      background-color: rgb(0, 83, 172);
+    }
+    li:nth-child(3)::before{
+      content:'低价促';
+      position: absolute;
+      background-color: #FF8E00;
+      font-size: 12px;
+      left:70px;
+      top:-10px;
+      padding:1px;
+      white-space: pre;
+      z-index: 20;
+    }
+    li:nth-child(3)::after{
+      content:'';
+      position: absolute;
+      border:2px solid #FF8E00;
+      border-color:#FF8E00 transparent transparent #FF8E00;
+      left:74px;
+      bottom:31px;
+    }
+    li:nth-child(4)::before{
+      content: '新升级';
+      position: absolute;
+      font-size: 12px;
+      padding: 1px;
+      background-color: #FF8E00;
+      left:100px;
+      top:-10px;
+      white-space: pre;
+      z-index: 20;
+    }
+    li:nth-child(4)::after{
+      content: '';
+      position: absolute;
+      border:2px solid #FF8E00;
+      border-color:#FF8E00 transparent transparent #FF8E00;
+      right:2px;
+      top:8px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="#">首页</a></li>
+    <li><a href="#" title="酒店预订">国内酒店</a></li>
+    <li><a href="#">海外酒店</a></li>
+    <li><a href="#">国内·国际机票</a></li>
+    <li><a href="#">火车票</a></li>
+    <li><a href="#">汽车票</a></li>
+    <li><a href="#">商旅</a></li>
+  </ul>
+</body>
+
+</html>
