@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    input{
+      display: none;
+
+    }
+    label{
+      display:inline-block;
+      position: relative;
+      width:500px;
+      height:250px;
+      background-color:white;
+      border:4px solid rgb(200,203,200);
+      box-sizing: border-box;
+      border-radius: 888px;
+      margin:10px auto;
+      transition: 1s;
+
+    }
+    label::before{
+      position: absolute;
+      content: '';
+      width:220px;
+      height:220px ;
+      background-color: white;
+      box-shadow:0 0 30px grey;
+      border-radius: 888px;
+     top:12px;
+     left:16px;
+     transition: 1s;
+    }
+    input:checked+label::before{
+      position: absolute;
+
+     left:260px;
+    }
+    input:checked+label{
+      background-color: rgb(48,243,73);
+      border-color:rgb(48,243,73);
+    }
+
+
+
+    .p2{
+      margin-left:50px;
+    }
+
+    label.fg,label.bg,label.cg{
+      display: inline-block;
+      position: relative;
+      width: 26px;
+      height:26px;
+      border:3px solid black;
+      border-radius: 888px;
+      background-color: white;
+      top:15px;
+      right:162px;
+      transition: 1s;
+    }
+     label.fg::before,label.bg::before,label.cg::before{
+       content: '';
+      position: absolute;
+      width:0px;
+      height:0px;
+      border-radius: 30px;
+      background-color:black;
+      top:10px;
+      left:10px;
+       transition: 1s;
+    }
+    .in1:checked~label.fg::before,.in2:checked~label.bg::before,.in3:checked~label.cg::before{
+      content:'';
+      position: absolute;
+      top:4px;
+      left:4px;
+      width:12px;
+      height:12px;
+      border-radius: 30px;
+      background-color: rgb(48,243,73);
+      border-color:rgb(48,243,73) ;
+      transition: 1s;
+    }
+
+    .in1:checked ~ label.fg,.in2:checked~label.bg,.in3:checked~label.cg {
+      border-color:rgb(48,243,73);
+    }
+    /*~表示在input后同级别的兄弟元素中找到label*/
+    span{
+      font-size: 20px;
+      color:rgb(63,63,63);
+      font-family: 苹方;
+    }
+
+  </style>
+</head>
+<body>
+  <input type="checkbox" id="up">
+  <label for="up" data-tip=""></label>
+
+  <div class="p2">
+  <input type="radio" name="button" value="first" id="flower" class="in1"><span>Redio Button</span>
+  <label for="flower" class="fg"></label><br>
+  <input type="radio" name="button" value="second" id="abc" class="in2"><span>Redio Button</span>
+  <label for="abc" class="bg"></label><br>
+  <input type="radio" name="button" value="thired" id="alin" class="in3"><span>Redio Button</span>
+  <label for="alin" class="cg"></label>
+  </div>
+</body>
+</html>
