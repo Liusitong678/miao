@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .d1{
+      border:2px solid white;
+      position: relative;
+      width:550px;
+      height: 367px;
+      margin:100px auto;
+      overflow: hidden;
+    }
+    section{
+      width:2200px;
+      font-size: 0;
+      transition: .5s;
+      position:absolute;
+      top:0;
+      left:0;
+    }
+
+    input{
+      display:none;
+      position: relative;
+    }
+    #a:checked ~ section{
+      left:0%;
+    }
+    #b:checked ~ section{
+      left:-100%;
+    }
+    #c:checked ~ section{
+      left:-200%;
+    }
+    #d:checked ~ section{
+      left:-300%;
+    }
+    .c1{
+      display: inline-block;
+      position: relative;
+      width: 16px;
+      height:16px;
+      top:calc(100% - 35px);
+      left:70%;
+      border:4px solid rgba(151, 151, 151,0.5);
+      border-radius: 88px;
+      box-sizing: border-box;
+      background-color: rgb(224, 224, 224);
+      z-index: 1;
+      margin:10px;
+    }
+    .c1::before{
+      content: '';
+      position: absolute;
+      border-radius: 30px;
+      background-color:rgb(173, 173, 173);
+    }
+    input:checked+.c1::before{
+      content:'';
+      position: absolute;
+      width: 8px;
+      height:8px;
+      border-radius: 10px;
+      background-color: rgb(59, 59, 59);
+      transition: .1s;
+    }
+    input:checked+.c1{
+      border-color: rgba(73, 73, 73,0.7);
+    }
+
+    .p1{
+      position:relative;
+    }
+    .c2{
+      display: inline-block;
+      position: absolute;
+      top:35%;
+      left:0;
+      width:40px;
+      height:90px;
+      z-index: 1;
+      cursor: pointer;
+      background-image: url(jbl.png);
+    }
+    input:checked+.c1+.c2,input:checked+.c1+.c2+.cyou{
+      z-index: 10;
+    }
+    .cyou{
+      display: inline-block;
+      position: absolute;
+      top:35%;
+      right:0px;
+      width:40px;
+      height:90px;
+      z-index: 1;
+      cursor: pointer;
+      background-image: url(jbr.png);
+    }
+    .c2:hover{
+      background-color: rgba(0,0,0,0.3);
+      background-image: url(jwl.png);
+    }
+    .cyou:hover{
+      background-color: rgba(0,0,0,0.3);
+      background-image: url(jwr.png);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="d1">
+  <input type="radio" name="banner" id="a" >
+  <label for="a" class="c1" ></label>
+  <label for="d" class="c2"></label>
+  <label for="b" class="cyou"></label>
+  <input type="radio" name="banner" id="b" >
+  <label for="b" class="c1"></label>
+  <label for="a" class="c2"></label>
+  <label for="c" class="cyou"></label>
+  <input type="radio" name="banner" id="c" >
+  <label for="c" class="c1"></label>
+  <label for="b" class="c2"></label>
+  <label for="d" class="cyou"></label>
+  <input type="radio" name="banner" id="d" >
+  <label for="d" class="c1"></label>
+  <label for="c" class="c2"></label>
+  <label for="a" class="cyou"></label>
+
+<!-- <div class="last-pic" role="button">
+  <img src="jbl.png" alt="last-pic">
+</div> -->
+  <section>
+  <img src="pic1.jpg" alt="picture of sea" class="p1">
+  <img src="pic2.jpg" alt="picture of cloud" >
+  <img src="pci3.jpg" alt="picture of buliding">
+  <img src="pic4.jpg" alt="picture of bird">
+  </section>
+    </div>
+</body>
+</html>

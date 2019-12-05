@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 100px auto;
+      text-align: left;
+      width:100%;
+      /* 左对齐 */
+    }
+
+    /* 设置padding */
+    th,
+    td {
+      padding: 0 10px;
+    }
+    /* 设置table的文字颜色 */
+    .table {
+      color: rgb(33, 37, 41);
+      background-color: white;
+    }
+
+    /* 设置横行线 */
+    .table tr {
+      border-top: 1px solid rgb(222, 226, 230);
+    }
+
+    /* 设置第二行加粗的线 */
+    .table thead th {
+      border-bottom: 2px solid rgb(222, 226, 230);
+    }
+
+    /* ////////////////////dark区域////////////////////// */
+
+    .table-dark {
+      background-color: rgb(52, 58, 64);
+      color: white;
+    }
+
+    .table-dark tr {
+      border-top: 1px solid rgb(69, 77, 85);
+    }
+
+    .table-dark thead th {
+      border-bottom: 2px solid rgb(69, 77, 85);
+    }
+
+    /* //////////////////////thead-dark区域////////////////////////// */
+    .table {
+      color: rgb(33, 37, 41);
+      background-color: white;
+    }
+
+    .table tr {
+      border-top: 1px solid rgb(222, 226, 230);
+    }
+
+    .table thead th {
+      border-bottom: 2px solid rgb(222, 226, 230);
+    }
+
+    .thead-dark {
+      background-color: rgb(52, 58, 64);
+      color: white;
+    }
+
+    /* ////////////thead-light区域////////////////////////////////////// */
+    .table {
+      color: rgb(33, 37, 41);
+      background-color: white;
+    }
+
+    .table tr {
+      border-top: 1px solid rgb(222, 226, 230);
+    }
+
+    .table thead th {
+      border-bottom: 2px solid rgb(222, 226, 230);
+    }
+
+    .thead-light {
+      background-color: rgb(233, 236, 239);
+      color: rgb(33, 37, 41);
+    }
+
+    /* ////////////////////////////table table-striped区域/////////////////// */
+    .thead-drak,
+    .thead-light {
+      background-color: white;
+      color: rgb(33, 37, 41);
+    }
+
+    .table {
+      color: rgb(33, 37, 41);
+      background-color: white;
+    }
+
+    .table tr {
+      border-top: 1px solid rgb(222, 226, 230);
+    }
+
+    .table thead th {
+      border-bottom: 2px solid rgb(222, 226, 230);
+    }
+
+    .table-striped tbody tr:first-child,
+    .table-striped tbody tr:last-child {
+      background-color: rgb(242, 242, 242);
+    }
+
+    /* ////////////////////////////table-dark table-striped区域/////////////////// */
+    .thead-drak,
+    .thead-light {
+      background-color: rgb(52, 58, 64);
+      color: white;
+    }
+
+    .table-dark {
+      background-color: rgb(52, 58, 64);
+      color: white;
+    }
+
+    .table-dark tr {
+      border: 1px solid rgb(69, 77, 85);
+    }
+
+    .table-dark thead th {
+      border-bottom: 2px solid rgb(69, 77, 85);
+    }
+
+    .table-striped tbody tr:first-child,
+    .table-striped tbody tr:last-child {
+      background-color: rgb(62, 68, 74);
+    }
+
+    /* /////////////////////////table-bordered 区域///////////////////////// */
+
+
+    .table-bordered td,
+    .table-bordered th {
+      border: 1px solid rgb(222, 226, 230);
+    }
+
+    /*///////////////////table table-bordered table-dark区域////////////////////*/
+
+    .table-bordered td,
+    .table-bordered th {
+      border: 1px solid rgb(69, 77, 85);
+    }
+
+    /* ////////////////////////////////table-borderless区域////////////////////// */
+    .table-borderless th,
+    .table-borderless td {
+      border: 1px solid white;
+    }
+
+    .table-borderless thead th {
+      border-bottom: 2px solid white;
+    }
+
+    /* //////////////////////table table-borderless table-dark////////////////////////////// */
+    .table-borderless th,
+    .table-borderless td {
+      border: 1px solid rgb(52, 58, 64);
+    }
+
+    .table-borderless thead th {
+      border-bottom: 2px solid rgb(52, 58, 64);
+    }
+
+    /* /////////////////////////////table-hover区域////////////////////////////////// */
+    .table-hover tbody tr:hover {
+      background-color: rgb(236, 236, 236);
+    }
+
+    /* /////////////////////////table table-hover table-dark区域/////////////////////// */
+    .table-hover tbody tr:hover {
+      background-color: rgb(67, 73, 78);
+    }
+
+    /* /////////////////////////////table-sm区域/////////////////////////////////// */
+    .table-sm {
+      /* display:table-row; */
+      text-align: left;
+    }
+
+    .table-sm tr {
+      height: 34px;
+      padding: 0;
+    }
+  </style>
+</head>
+
+
+<body>
+  <table class="table xtable-dark xtable-striped xtable-bordered xtable-borderless xtable-hover xtable-sm">
+    <thead class="xthead-dark xthead-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+    </table>
+</body>
+
+</html>
