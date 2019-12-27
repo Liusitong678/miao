@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+  margin:0;
+  padding:0;
+}
+.hero{
+  height:780px;
+  width:100%;
+  background: url(https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-8.jpg) no-repeat ;
+  background-size:100% 780px ;
+   position: relative;
+}
+.hero img{
+  height:780px;
+}
+
+.hero-content{
+  max-width: 1040px;
+  height:100%;
+  margin:auto;
+}
+.hero-content p{
+  position: absolute;
+  top:50%;
+  width:600px;
+  font-size:70px;
+  /* color:white; */
+
+}
+section{
+  overflow: hidden;
+}
+ul{
+  list-style-type: none;
+  overflow: hidden;
+  margin:2px -2px;
+
+}
+li{
+  height: 260px;
+  width:25%;
+  float:left;
+  background: url(https://mobike.com/cn/assets/themes/moby/img/promo-03.jpg) no-repeat;
+  background-size:100% 260px ;
+  box-sizing:border-box;
+  border:2px solid white
+}
+@media (max-width:1080px){
+  .hero{
+    height:625px;
+  }
+  .hero-content p{
+    font-size:40px;
+  }
+  li{
+    width:50%;
+  }
+}
+@media(max-width:640px){
+  li{
+    width:100%;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-content">
+      <p>让自行车回归城市</p>
+    </div>
+  </div>
+  <section>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </section>
+</body>
+</html>
