@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+  margin:0;
+  padding:0;
+  background-color: rgba(0,0,0,0.1);
+}
+div{
+  display: flex;
+  width:1226px;
+  justify-content: space-between;
+}
+section{
+  height:615px;
+  width:235px;
+  background-color: blue;
+
+}
+ul{
+   display: flex;
+  list-style: none;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  align-content:space-between;
+  justify-content:space-between;
+  height:614px;
+  width:978px;
+}
+li{
+  height:301px;
+  width:236px;
+  background-color: pink;
+ /*  margin:5px; */
+}
+.a{
+  width:236px;
+  height:301px;
+  align-content:space-between;
+}
+.a li{
+  margin:0;
+  height:144px;
+  width:236px;
+  background-color:red;
+
+}
+  </style>
+</head>
+<body>
+  <div>
+    <section></section>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>
+        <ul class="a">
+          <li>8</li>
+          <li>9</li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+</body>
+</html>
