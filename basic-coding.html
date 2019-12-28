@@ -25,7 +25,7 @@
   var b = +prompt()
   var c = +prompt()
   var x = (a + b) / c
-      x = x.toFixed( 0 )
+      x = Math.floor(x)
   console.log(x)
 </script>
 
@@ -42,6 +42,7 @@ console.log(x , y)
   var a = +prompt()
   var b = +prompt()
   var x =a / b
+  x = x.toFixed(9)
   console.log(x)
 </script>
 
@@ -75,6 +76,7 @@ console.log(x , y)
 <script id="ch0103/09">
   var r = +prompt()
   var d = 2 * r
+  d = d.toFixed(4)
   var c = 2 * Math.PI * r
   c = c.toFixed(4)
   var s = Math.PI * r * r
@@ -110,7 +112,6 @@ console.log(x , y)
   var a = n % 10
   var b = (n - a) / 10 % 10
   var c = (n - 10*b - a) / 100
-  //var m = c*100 +b*10+a
   console.log(a,b,c)
 </script>
 
