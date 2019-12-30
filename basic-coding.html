@@ -210,6 +210,14 @@ else{
 </script>
 
 <script id="ch0104/04">
+  var str = +prompt();
+  var codeValue = str.charCodeAt(0);
+  if (codeValue % 2 == 0 ) {
+    console.log('NO');
+  }
+  else{
+    console.log('YES');
+  }
 </script>
 
 <script id="ch0104/05">
@@ -424,7 +432,9 @@ else{
 var n = +prompt()
 var x = +prompt()
 var y = +prompt()
-
+  var k = n - y / x
+  k = Math.floor(k)
+  console.log(k)
 )
 </script>
 
