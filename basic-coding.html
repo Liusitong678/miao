@@ -173,5 +173,260 @@ console.log(x , y)
 <script id="ch0103/20">
 
 </script>
+
+<script id="ch0104/01">
+  var n = +prompt()
+  if (n > 0) {
+    console.log('positive');
+  }
+  else if (n = 0) {
+    console.log('zero');
+  }
+  else {
+    console.log('negative');
+  }
+</script>
+
+<script id="ch0104/02">
+var n = +prompt()
+if (n > 0) {
+  console.log(n)
+}
+else{
+  var n = -n
+  console.log(n)
+}
+</script>
+
+<script id="ch0104/03">
+  var n = +prompt()
+  var k = n % 2
+  if (k == 0) {
+    console.log('even')
+  }
+  else {
+    console.log('odd')
+  }
+</script>
+
+<script id="ch0104/04">
+</script>
+
+<script id="ch0104/05">
+  var x = +prompt()
+  var y = +prompt()
+  if (x > y) {
+    console.log('>')
+  }
+  else if (x < y) {
+    console.log('<')
+  }
+  else {
+    console.log('=')
+  }
+</script>
+
+<script id="ch0104/06">
+var a = +prompt()
+if (a >= 10 && a <= 99){
+  console.log(1)
+}
+else{
+  console.log(0)
+}
+</script>
+
+<script id="ch0104/07">
+var a = +prompt()
+var b = +prompt()
+if (a >= 10 || b >= 20){
+  console.log(1)
+}
+else{
+  console.log(0)
+}
+</script>
+
+<script id="ch0104/08">
+var n = +prompt()
+var a = n % 3
+var b = n % 5
+if (a == 0 && b == 0){
+  console.log('YES')
+}
+else{
+  console.log('NO')
+}
+</script>
+
+<script id="ch0104/09">
+  var n = +prompt()
+  var a = n % 3
+  var b = n % 5
+  var c = n % 7
+  if (a == 0 && b == 0 && c == 0) {
+    console.log(3, 5, 7)
+  }
+  else if ((a == 0 && b == 0) || (a == 0 && c == 0) || (c == 0 && b == 0)) {
+    console.log
+  }
+</script>
+
+<script id="ch0104/10">
+  var a = +prompt()
+  var b = +prompt()
+  if (a < 60 || b < 60) {
+    console.log(1)
+  }
+  else {
+    console.log(0)
+  }
+</script>
+
+<script id="ch0104/11">
+  var n = +prompt()
+  var k = n % 2
+  if (k == 0) {
+    console.log('YES')
+  }
+  else {
+    console.log('NO')
+  }
+</script>
+
+<script id="ch0104/12">
+  var s = +prompt()
+  if (s < 100) {
+    console.log('Walk')
+  }
+  else if (s > 100) {
+    console.log('Bike')
+  }
+  else {
+    console.log('All')
+  }
+</script>
+
+<script id="ch0104/13">
+var x = +prompt()
+if (0 <= x && x < 5){
+  var y = -x +2.5
+  y = y.toFixed(3)
+  console.log(y)
+}
+else if (5 <= x && x < 10){
+  var y = 2 - 1.5(x - 3)(x - 3)
+  y = y.toFixed(3)
+  console.log(y)
+}
+else if(10 <= x && x < 20){
+  var y = x / 2 - 1.5;
+  y = y.toFixed(3)
+  console.log(y)
+}
+</script>
+
+<script id="ch0104/14">
+var a = +prompt()
+var y = 5
+var n = 0
+if (a <= 1000){
+  console.log(8)
+}
+else if ( ){
+
+}
+</script>
+
+<script  id="ch0104/15">
+var a = +prompt()
+var b = +prompt()
+var c = +prompt()
+if (a > b && a > c){
+  console.log(a)
+}
+else if (b > a && b > c){
+  console.log(b)
+}
+else if(c > a && c > b){
+  console.log(c)
+}
+</script>
+
+<script id="ch0104/16">
+  var a = +prompt()
+  var b = +prompt()
+  var c = +prompt()
+  if(a+b>c && a+c>b && b+c>a){
+    console.log('yes')
+  }
+  else{
+    console.log('no')
+  }
+</script>
+
+<script id="ch0104/17">
+var a = +prompt()
+if ( a % 4 == 0 && a % 100 !== 0){
+  console.log('Y')
+}
+else{
+  console.log('X')
+}
+</script>
+
+<script id="ch0104/18">
+var x = +prompt()
+var y = +prompt()
+if ((x >= -1 && x <= 1)&&(y >= -1 && y <= 1)){
+  console.log('yes')
+}
+else{
+  console.log('no')
+}
+</script>
+
+<script id="ch0104/19">
+
+</script>
+
+<script id="ch0104/20">
+  var a = +prompt()
+  var b = +prompt()
+  var c = +prompt()
+  var delta = b * b - 4 * a * c
+  if (delta < 0) {
+    var delta = -delta
+    var m = - b / (2 * a)
+    m = m.toFixed(5)
+    var n = +Math.sqrt(delta) / 2 / a
+    n = n.toFixed(5)
+    var x1 = m + '+' + n + 'i'
+    var x2 = m + '-' + n + 'i'
+    console.log(x1)
+    console.log(x2)
+  } else if (delta = 0) {
+    var x = (-b + Math.sqrt(delta)) / (2 * a)
+    x = x.toFixed(5)
+    console.log(x)
+  }
+  else if (delta > 0) {
+    var x1 = (-b + Math.sqrt(delta)) / (2 * a)
+    var x2 = (-b - Math.sqrt(delta)) / (2 * a)
+    x1 = x1.toFixed(5)
+    x2 = x2.toFixed(5)
+    console.log(x1)
+    console.log(x2)
+  }
+</script>
+
+<script id="ch0104/21">
+var n = +prompt()
+var x = +prompt()
+var y = +prompt()
+
+)
+</script>
+
 </body>
 </html>
