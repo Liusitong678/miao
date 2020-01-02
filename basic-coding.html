@@ -486,12 +486,11 @@ alert((sum / n).toFixed(2))
 </script>
 
 <script id="ch0105/02">
-  var n = 12
   var sum = 0
-  for (let i = 1; i <= n; i++) {
+  for (let i = 1; i <= 12; i++) {
       sum += +prompt()
   }
-  alert('$' + (sum / n).toFixed(2))
+  alert('$' + (sum / 12).toFixed(2))
 </script>
 
 <script id="ch0105/03">
@@ -524,7 +523,7 @@ alert((sum / n).toFixed(2))
   var max = -1
   while (count < n) {
     sum = +prompt()
-    while (max < sum) {
+    if (max < sum) {
       max = sum
     }
     count++
@@ -540,15 +539,211 @@ alert((sum / n).toFixed(2))
   var min = Infinity
   while(count < n){
     sum = +prompt()
-    while(max < sum){
+    if(max < sum){
       max = sum
     }
-    while(min > sum){
+    if(min > sum){
       min = sum
     }
     count++
   }
   alert(max - min)
 </script>
+
+<script id="ch0105/07">
+  var n = +prompt()
+  var gold = 0
+  var silver = 0
+  var copper = 0
+  while(count < n){
+    gold += +prompt()
+    silver += +prompt()
+    copper += +prompt()
+  }
+  console.log(gold,silver,copper, gold + silver + copper)
+</script>
+
+<script id="ch0105/08">
+  var n = +prompt()
+  var sumDegree = 0
+  for (var i = 1; i < n ; i++){
+    var degree = +prompt()
+    sumDegree += degree
+  }
+  console.log((n - 2) * 180 - sumDegree)
+</script>
+
+<script id="ch0105/09">
+  var m = +prompt()
+  var n = +prompt()
+  var sum = 0
+  if (m % 2 == 0) {
+    m = m + 1
+  }
+  if (n % 2 == 0) {
+    n = n - 1
+  }
+  for (let i = m; i <= n; i += 2) {
+    sum += i
+  }
+  alert(sum)
+</script>
+
+<script id="ch0105/10">
+  var m = +prompt()
+  var n = +prompt()
+  var sum = 0
+  for (let i = m; i <= n; i++) {
+    if (i % 17 == 0) {
+      sum += i
+    }
+  }
+  alert(sum)
+</script>
+
+<script id="ch0105/11">
+  var n = +prompt()
+  var sum = 0
+  var count1 = 0
+  var count2 = 0
+  var count3 = 0
+  for (let i = 0; i < n; i++) {
+    sum = +prompt()
+    if (sum == 1) {
+      count1++
+    }
+    if (sum == 5) {
+      count2++
+    }
+    if (sum == 10) {
+      count3++
+    }
+  }
+  console.log(count1, count2, count3)
+</script>
+
+<script id="ch0105/12">
+  var N = +prompt()
+  var m = +prompt()
+  var sum = 0
+  var count = 0
+  for (let i = 0; i < N; i++) {
+    sum = +prompt()
+    if(sum == m){
+      count++
+    }
+  }
+ alert(count)
+</script>
+
+<script id="ch0105/13">
+  var a = +prompt()
+  var n = +prompt()
+  var sum = 1
+  var count = 0
+  while(count < n){
+    sum *= a
+    count++
+  }
+  alert(sum)
+</script>
+
+<script id="ch0105/14">
+  var x = +prompt()
+  var n = +prompt()
+  for (let i = 0; i < n; i++) {
+    x = x + x*0.001
+  }
+  alert((x).toFixed(4))
+</script>
+
+<script id="ch0105/15">
+  var r = +prompt()
+  var m = +prompt()
+  var y = +prompt()
+  for (let i = 0; i < y; i++) {
+    m = m + m * (r / 100)
+  }
+  m = Math.floor(m)
+  console.log(m)
+</script>
+
+<script id="ch0105/16">
+  var n = +prompt()
+  var k = +prompt()
+  var price = 200
+  var r = 1 + k / 100
+  var sum = n
+  for (let i = 2; ; i++) {
+    sum += n
+    price = price * r
+    if (sum >= price) {
+      console.log(i)
+      break
+    }
+  }
+</script>
+
+<script id="ch0105/17">
+</script>
+
+<script id="ch0105/18">
+</script>
+
+<script id="ch0105/19">
+  var n = +prompt()
+  var time = 0
+  for (let i = 0; i < n; i++) {
+    var x = +prompt()
+    var y = +prompt()
+    var person = +prompt()
+    time += (Math.sqrt(x * x + y * y) * 2) / 50 + (person * 1.5)
+  }
+  time = Math.ceil(time)
+  console.log(time)
+</script>
+
+<script id="ch0105/20">
+  var h = +prompt()
+  var sum1 = 0
+  var sum2 = 0
+
+  for (let i = 0; i < 10; i++) {
+    h = h * 0.5
+  }
+  console.log(sum1 + sum2)
+  console.log(h.toFixed(7))
+</script>
+
+<script id="ch0105/21">
+</script>
+
+<script id="ch0105/22">
+</script>
+
+<script id="ch0105/23">
+</script>
+
+<script id="ch0105/24">
+</script>
+
+<script id="ch0105/25">
+</script>
+
+<script id="ch0105/26">
+</script>
+
+<script id="ch0105/27">
+</script>
+
+<script id="ch0105/28">
+</script>
+
+<script id="ch0105/29">
+</script>
+
+<script id="ch0105/30">
+</script>
+
 </body>
 </html>
