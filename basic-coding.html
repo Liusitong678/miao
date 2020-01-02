@@ -517,14 +517,38 @@ alert(sum / n)
   console.log((sum / n).toFixed(5))
 </script>
 
-<script id="ch0105/04">
+<script id="ch0105/05">
   var n = +prompt()
+  var count = 0
   var sum = 0
-  var count = 1
-  while(count <= n){
+  var max = -1
+  while (count < n) {
     sum = +prompt()
+    while (max < sum) {
+      max = sum
+    }
+    count++
   }
-  alert(Math.max(sum))
+  alert(max)
+</script>
+
+<script id="ch0105/06">
+  var n = +prompt()
+  var count = 0
+  var sum = 0
+  var max = -1
+  var min = Infinity
+  while(count < n){
+    sum = +prompt()
+    while(max < sum){
+      max = sum
+    }
+    while(min > sum){
+      min = sum
+    }
+    count++
+  }
+  alert(max - min)
 </script>
 </body>
 </html>
